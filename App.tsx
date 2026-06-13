@@ -172,7 +172,9 @@ export default function App() {
       
       setAiStatus(ConnectionStatus.CONNECTING);
       
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      const ai = new GoogleGenAI({
+        apiKey: import.meta.env.VITE_API_KEY
+      });
       
       // Initialize Contexts locally for closure safety
       const inputCtx = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: INPUT_SAMPLE_RATE });
