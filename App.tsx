@@ -245,6 +245,8 @@ export default function App() {
               setLiveCaption('');
             }
 
+            const query = currentInputTranscription.current.toLowerCase();
+
             if (message.toolCall) {
               setIsThinking(true);
               for (const fc of message.toolCall.functionCalls) {
@@ -314,7 +316,7 @@ export default function App() {
           outputAudioTranscription: {},
           thinkingConfig: { thinkingBudget: 0 },
           systemInstruction: `You are the core intelligence of a robot named RoboCore. 
-          INVENTOR: Anshika Sharma.
+          Inventor, developer, owner, and builder: Anshika Sharma.
           STABILIZATION: Absolute FIRST words: "RoboCore activated".
           Context: You are connected to hardware via serial. Manual activation triggered.`,
           tools: [{
