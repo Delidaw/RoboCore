@@ -187,7 +187,7 @@ export default function App() {
       streamRef.current = stream;
 
       const sessionPromise = ai.live.connect({
-        model: 'gemini-2.5-flash-native-audio-preview-12-2025',
+        model: 'gemini-3.1-flash-live-preview',
         callbacks: {
           onopen: () => {
             setAiStatus(ConnectionStatus.CONNECTED);
