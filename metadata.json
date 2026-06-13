@@ -1,0 +1,9 @@
+{
+  "name": "RoboCore",
+  "description": "A high-performance GenAI interface for Arduino robots and smart speakers, featuring real-time voice interaction, function calling for robot movement, and a futuristic dashboard.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "serial"
+  ]
+}
